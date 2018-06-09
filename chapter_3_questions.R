@@ -1,4 +1,4 @@
-# Wackerly Mathematical Statistics w/ app.
+# Wackerly Mathematical Statistics w/ app. 7th ed.
 # June 6, 2018
 # Kenneth Sharman
 
