@@ -12,4 +12,7 @@ dbinom( x = 3, size = 10, prob = 0.2) + dbinom( x = 4, size = 10, prob = 0.2)
 dbinom( x = 2, size = 10, prob = 0.2) + 
   dbinom( x = 3, size = 10, prob = 0.2) + dbinom( x = 4, size = 10, prob = 0.2)
 sum( dbinom( x = c(2,3,4), size = 10, prob = 0.2) )
-
+# P( 2 < Y <= 5)
+sum(dbinom( x = c(3,4,5), size = 10, prob = 0.2))
+# P( 2 <= Y <= 5)
+sum(dbinom( x = c(2,3,4,5), size = 10, prob = 0.2))
