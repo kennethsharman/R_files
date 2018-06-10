@@ -1,4 +1,5 @@
 # Wackerly Mathematical Statistics w/ app. 7th ed.
+# Chapter 3 Questions
 # June 6, 2018
 # Kenneth Sharman
 
