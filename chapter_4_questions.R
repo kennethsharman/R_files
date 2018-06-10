@@ -81,3 +81,10 @@ p1 <- pnorm( q = 550, mean = 480, sd = 100 )
 # For Y ~ N( mean = 18, sd = 6 )
 # P( Z < z_0 ) = p1
 qnorm( p = p1, mean = 18, sd = 6 )
+
+# Question 4.99
+# Y ~ Gamma( shape = 2, scale = 1 )
+# P( Y > 1 )
+1 - pgamma( q = 1, shape = 2, scale = 1 )
+pgamma( q = 1, shape = 2, scale = 1, lower.tail = FALSE )
+ppois( q = 1, lambda = 1)
