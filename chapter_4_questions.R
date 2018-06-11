@@ -88,3 +88,5 @@ qnorm( p = p1, mean = 18, sd = 6 )
 1 - pgamma( q = 1, shape = 2, scale = 1 )
 pgamma( q = 1, shape = 2, scale = 1, lower.tail = FALSE )
 ppois( q = 1, lambda = 1)
+
+?dhyper
