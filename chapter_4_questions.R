@@ -89,4 +89,8 @@ qnorm( p = p1, mean = 18, sd = 6 )
 pgamma( q = 1, shape = 2, scale = 1, lower.tail = FALSE )
 ppois( q = 1, lambda = 1)
 
-?dhyper
+# dbinom(y_0, n, p)
+# dgeom(y_0-1, p)
+# dnbinom(y_0-r, r, p)
+# pnorm(y_0, mean, sd)
+# qnorm(p, mean ,sd)
