@@ -36,6 +36,7 @@ pgeom( q = 1, p = 0.9, lower.tail = FALSE )
 pbinom( q = 0, size = 3, prob = 0.8, lower.tail = FALSE)
 1 - dbinom( x = 0, size = 3, prob = 0.8)
 
+
 # Question 3.73
 # Y ~ Geo( p = 0.9)
 # P( Y = 3 )
@@ -76,5 +77,4 @@ a / b
 # Therefore lambda = 1
 # P( y = 2 )
 dpois( x = 2, lambda = 1 )
-
 pnorm( q = 2, mean = 0, sd = 1) - pnorm( q = -2, mean = 0, sd = 1)
