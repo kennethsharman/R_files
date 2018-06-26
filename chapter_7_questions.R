@@ -10,6 +10,8 @@ x = qnorm( (0.05/2), 0, 1)
 # P( |Ybar - mean| < 0.3 )
 1 - 2 * pnorm(-1.2, 0, 1)
 
+# Due to time constraints the following questions will not be explained
+
 # Question 7.9 b
 1 - 2 * pnorm( -1.5, 0, 1 )
 1 - 2 * pnorm( -1.8, 0, 1 )
