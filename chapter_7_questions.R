@@ -1,3 +1,8 @@
+# Wackerly Mathematical Statistics w/ app. 7th ed.
+# Chapter 7 Questions
+# June 24, 2018
+# Kenneth Sharman
+
 # Example 7.2
 1 - 2 * pnorm(-0.9, 0, 1)
 
