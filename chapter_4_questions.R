@@ -24,7 +24,7 @@ sum( dbinom( x = c(2,3,4,5), size = 10, prob = 0.2 ) )
 fn <- function(y) y/8
 fn1 <- function(y) (y^2)/8
 fn2 <- function(y) (y^3)/8
-m <- integrate(fn, 0, 2)$value + integrate(fn1, 2, 4)$value
+m <- integrate(fn1, 0, 2)$value + integrate(fn2, 2, 4)$value
 m
 
 op <- integrate( fn1, 0, 2 )$value + integrate( fn2, 2, 4 )$value
