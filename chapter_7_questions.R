@@ -44,6 +44,7 @@ pnorm( -1.6, 0, 1)
 # Question 7.73
 pnorm( 1.27, 0, 1)
 
+
 # Question 7.75
 1 - 2 * pnorm( -1.2, 0, 1)
 
