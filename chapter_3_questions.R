@@ -78,3 +78,12 @@ a / b
 # P( y = 2 )
 dpois( x = 2, lambda = 1 )
 pnorm( q = 2, mean = 0, sd = 1) - pnorm( q = -2, mean = 0, sd = 1)
+
+# Made-up question
+# What is the expected value of throwing 2 dice?
+p <- c(1:6, 5:1) * (1/36)
+y <- c(2:12)
+m <- sum(y*p)
+v <- sum(y^2*p) - m^2
+m
+v
