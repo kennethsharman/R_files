@@ -3,6 +3,7 @@
 # June 24, 2018
 # Kenneth Sharman
 
+
 # Question 6.43
 # Transform sample mean to standard normal then calc prob
 # Z ~ Norm( 1, 0 )
