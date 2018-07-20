@@ -1,7 +1,7 @@
 # Notes about RStudio
 # June 6, 2018
 
-# In RSudio:
+# In RStudio:
 #   Comment block of code using CTRL+SHIFT+C
 #   CTRL+L will clear the console
 #   SHIFT+ALT+T will open the terminal
