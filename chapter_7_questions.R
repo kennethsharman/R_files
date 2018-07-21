@@ -48,4 +48,22 @@ pnorm( 1.27, 0, 1)
 # Question 7.75
 1 - 2 * pnorm( -1.2, 0, 1)
 
+# Example 1
+# Sum_1^10 Z_i^2 ~ chisquare(df=10)
+# P(Sum_1^10 Z_i^2 <= b) = 0.90
+b = qchisq(p = 0.90, df = 10)
 
+# Example 2a
+# P(-1.5 <= Z <= 1.5)
+1- 2 * pnorm(q = -1.5, 0, 1)
+1-2*0.0668
+# Example 2b
+qchisq(p = 0.05, df = 8)
+qchisq(p = 0.95, df = 8)
+
+# Example 3
+1 - 2 * pt(q = -2, df = 5)
+pt(2,5)-pt(-2,5)
+
+# Example 4
+qf(p = 0.95, df1 = 3 - 1, df2 = 16 - 1)
