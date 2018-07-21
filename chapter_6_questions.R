@@ -28,3 +28,10 @@ z_0.99 = qnorm(0.99, 0, 1)
 1 - ppois(19, lambda = 14)
 ppois(19, lambda = 14, lower.tail = FALSE)
 
+# Question 6.75
+P = (2/3)^(5)
+
+# Question 6.81
+1-exp(-3.6/(0.4))
+
+
