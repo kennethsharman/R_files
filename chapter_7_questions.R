@@ -1,6 +1,7 @@
 # Wackerly Mathematical Statistics w/ app. 7th ed.
 # Chapter 7 Questions
-# June 24, 2018
+# Started June 24, 2018
+# Updated End of July, 2018
 # Kenneth Sharman
 
 # Example 7.2
@@ -15,7 +16,7 @@ x = qnorm( (0.05/2), 0, 1)
 # P( |Ybar - mean| < 0.3 )
 1 - 2 * pnorm(-1.2, 0, 1)
 
-# Due to time constraints the following questions will not be explained
+# Due to time constraints the following questions will not include explanation comments
 
 # Question 7.9 b
 1 - 2 * pnorm( -1.5, 0, 1 )
@@ -67,3 +68,28 @@ pt(2,5)-pt(-2,5)
 
 # Example 4
 qf(p = 0.95, df1 = 3 - 1, df2 = 16 - 1)
+
+# Question 7.15
+Z_1 = qnorm(0.025, 0, 1)
+( sqrt(4.5) * Z_1 )^2
+
+# Question 7.21
+(1.4/19) * qchisq(0.975, 19)
+(1.4/19) * qchisq(0.025, 19)
+
+# Question 7.26
+qt(p = 0.05, 8)
+
+# Question 7.27
+1- pf(2, 5, 9)
+pf(0.5, 5, 9)
+
+# Question 7.28
+qf(0.975, 4, 6)
+qf(0.025, 4, 6)
+qf(0.975, 6, 4)
+1/ 0.1087274
+
+# Question 7.31
+qf(0.99, 4, 10)
+qchisq(0.99, 4)
