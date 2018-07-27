@@ -37,3 +37,14 @@ q1 = 1 - p1
 q2 = 1 - p2
 p1 - p2 - z_0.05 * sqrt( (p1*q1/2235) + (p2*q2/2065) )
 p1 - p2 + z_0.05 * sqrt( (p1*q1/2235) + (p2*q2/2065) )
+
+# Example D
+n1 = 9
+n2 = 8
+s1_sqr = 12.04^2
+s2_sqr = 11.25^2
+alpha = 0.05/2
+left = qf(p = 1 - alpha, df1 = 8, df2 = 7)
+right = qf(p = alpha, df1 = 8, df2 = 7)
+(1/left) * s1_sqr / s2_sqr
+(1/right) * s1_sqr / s2_sqr
