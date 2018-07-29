@@ -48,3 +48,16 @@ left = qf(p = 1 - alpha, df1 = 8, df2 = 7)
 right = qf(p = alpha, df1 = 8, df2 = 7)
 (1/left) * s1_sqr / s2_sqr
 (1/right) * s1_sqr / s2_sqr
+
+# Example 8.10
+n = 8 * (qnorm(1-0.025, 0, 1))^2
+n
+
+# Example 8.13
+y_bar = (4.1+5.2+10.2) / 3.0
+S_sqr = ( (4.1-y_bar)^2 + (5.2-y_bar)^2 + (10.2-y_bar)^2 ) / (3-1)
+
+chisqr_R = qchisq(0.05, df=2)
+chisqr_L = qchisq(1-0.05, df=2)
+2*S_sqr / chisqr_L
+2 * S_sqr / chisqr_R
