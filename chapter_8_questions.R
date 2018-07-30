@@ -49,7 +49,6 @@ right = qf(p = alpha, df1 = 8, df2 = 7)
 (1/left) * s1_sqr / s2_sqr
 (1/right) * s1_sqr / s2_sqr
 
-
 # Example 8.10
 n = 8 * (qnorm(1-0.025, 0, 1))^2
 n
