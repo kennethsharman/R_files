@@ -61,3 +61,10 @@ chisqr_R = qchisq(0.05, df=2)
 chisqr_L = qchisq(1-0.05, df=2)
 2*S_sqr / chisqr_L
 2 * S_sqr / chisqr_R
+
+# Example A Repeat
+z_0.025 = qnorm(p = 0.975, 0, 1)
+p_hat = 202 / 1010
+std_p = sqrt((p_hat*(1-p_hat))/1010)
+p_hat - z_0.025 * std_p
+p_hat + z_0.025 * std_p
