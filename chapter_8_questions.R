@@ -63,8 +63,18 @@ chisqr_L = qchisq(1-0.05, df=2)
 2 * S_sqr / chisqr_R
 
 # Example A Repeat
-z_0.025 = qnorm(p = 0.975, 0, 1)
+z_0.025 = qnorm(p=0.975, 0, 1)
 p_hat = 202 / 1010
-std_p = sqrt((p_hat*(1-p_hat))/1010)
-p_hat - z_0.025 * std_p
-p_hat + z_0.025 * std_p
+error = sqrt((p_hat*(1-(p_hat)))/1010)
+left = p_hat - z_0.025 * error
+right = p_hat + z_0.025 * error
+202/1010
+(left+right)/2
+p_hat2 = 0.5
+p_hat2 * (1-p_hat2)*(z_0.025/0.01)^2
+p_hat3 = 0.3
+p_hat3 * (1-p_hat3)*(z_0.025/0.01)^2
+
+# Example 8.10 Repeat
+8 * qnorm(p=0.975, 0, 1)^2
+

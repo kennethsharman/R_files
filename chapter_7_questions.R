@@ -108,3 +108,6 @@ qchisq(0.99, 4)
 # Question 7.11
 1- 2 * pnorm(q = -1.5, 0, 1)
 (-4 * qnorm(p = 0.05, 0, 1))^2
+
+# Example 3 Repeat
+1 - 2 * pt(q = -2, df = 5)
