@@ -24,3 +24,33 @@ z_0.025
 k = 15 + 1.645*(3/6)
 (k-16) / 0.5
 pnorm(-0.355, 0, 1)
+
+# Exercise 10.37
+z_0.95 = qnorm(p=0.05, 0, 1)
+130 + z_0.95 * (2.1/sqrt(40))
+(129.4538-128) / (2.1/sqrt(40))
+pnorm(q=4.37,0,1, lower.tail = FALSE)
+
+# Exercise 10.41
+5 + z_0.05 * (3.1/sqrt(500))
+(5.228036 - 5.5) / (3.1/sqrt(500))
+pnorm(q=-1.96171, 0, 1)
+
+# Class Example on Type 2 error
+26 + z_0.95 * (1.4/sqrt(30))
+(25.57957 - 25.8) / (1.4/sqrt(30))
+pnorm(q=-0.8623892, 0, 1, lower.tail = FALSE)
+
+# Exercise 10.45
+z_0.005 = qnorm(p=1-0.005, 0, 1)
+(1.65-1.43) - z_0.005 * sqrt((0.26^2/30)+(0.22^2/35))
+(1.65-1.43) + z_0.005 * sqrt((0.26^2/30)+(0.22^2/35))
+
+# Example A
+z_0.025 = qnorm(p=0.975, 0, 1)
+p_hat = 202/1010
+std_p = sqrt((p_hat*(1-p_hat)) / (1010))
+z = (p_hat - 0.25) / std_p
+z
+p_val = pnorm(q=z, 0, 1)
+p_val
