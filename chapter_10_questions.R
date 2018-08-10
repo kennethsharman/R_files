@@ -95,4 +95,14 @@ t_0.01
 
 # Example 10.12
 t = (2959-3000) / (39.1/sqrt(8))
-t
+
+# Example 10.13
+pt(q=-2.96587, df=7)
+
+# Example 10.14
+sp = sqrt((195.56+160.22)/16)
+t = (35.22-31.56) / (sp*sqrt(2/9))
+qt(p=0.975, df = 16)
+
+# Example 10.15
+2 * pt(q=1.646, df=16, lower.tail = FALSE)
