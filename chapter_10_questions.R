@@ -54,3 +54,29 @@ z = (p_hat - 0.25) / std_p
 z
 p_val = pnorm(q=z, 0, 1)
 p_val
+
+# Exercise 10.51
+(74-71) / sqrt((9^2+10^2) / 50)
+2 * pnorm(1.577, 0, 1, lower.tail = FALSE)
+
+
+# EXercerise 10.53 
+z = (3.6-3.8) / (1.1/sqrt(30))
+pnorm(z, 0, 1)
+z = (2.7-3.1) / (1.2/sqrt(30))
+pnorm(z, 0, 1)
+
+# Excercise 10.55
+p_hat = 45/1124
+z = (p_hat-0.05) / sqrt((0.05*(1-0.05))/1124)
+pnorm(z, 0, 1)
+
+# Exercise 10.57
+z = (0.54-0.6) / sqrt((0.6*0.4)/200)
+2 * pnorm(z, 0, 1)
+
+# Example F
+z = (4.7-5) / (0.5/sqrt(9))
+z_0.025
+4.7 - (1.96*0.5/3)
+4.7 + (1.96*0.5/3)
