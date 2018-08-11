@@ -106,3 +106,13 @@ qt(p=0.975, df = 16)
 
 # Example 10.15
 2 * pt(q=1.646, df=16, lower.tail = FALSE)
+
+# Example 10.16
+chi_sqr = 9 * 0.0003^2 / 0.0002
+qchisq(p=0.95, df=9)
+
+# Example 10.21
+F = 26.4 / 12.7
+qf(p=0.95, df1=9, df2=13, lower.tail = FALSE)
+qf(0.05, df1=9, df2=13, lower.tail = FALSE)
+2*pf(q=F, df1=9, df2=13, lower.tail = FALSE)
