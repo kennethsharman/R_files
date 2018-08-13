@@ -170,3 +170,39 @@ z_0.025 = qnorm(p=0.025, 0, 1, lower.tail = FALSE)
 177 - z_0.025 * (6/sqrt(9))
 177 + z_0.025 * (6/sqrt(9))
 (z_0.025 * 6 / 0.5)^2
+
+# Example 10.8
+15 + 1.645 * (3/6)
+(15.8225-16) / (3/6)
+pnorm(q=-0.355)
+
+# Exercise 10.37
+130 - 1.645 * (2.1/sqrt(40))
+(129.4538-128) / (2.1/sqrt(40))
+1 - pnorm(4.378399)
+
+# Exercise 10.41
+5 + 1.645 * (3.1/sqrt(500))
+(5.228057-5.5) / (3.1/sqrt(500))
+pnorm(q=-1.96)
+
+# Exercise 10.55
+((45/1124) - 0.05) / sqrt(0.05*0.95/1124)
+qnorm(p=0.01)
+pnorm(q=-1.538)
+
+# Example 10.14
+sp = sqrt((195.56+160.22)/16)
+(35.22-31.56)/(sp*sqrt(2/9))
+qt(p=0.025, df=16, lower.tail = FALSE)
+
+# Example 10.16
+9*0.0003/0.0002
+qchisq(p=0.05, df=9, lower.tail = FALSE)
+
+# Example 10.21
+26.4/12.7
+qf(p=0.05, df1=9, df2=13, lower.tail = FALSE)
+2 * pf(q=2.07874, df1=9, df2=13, lower.tail = FALSE)
+qf(p=0.05, df1=9, df2=13)
+qf(p=0.05, df1=9, df2=13, lower.tail = FALSE)
