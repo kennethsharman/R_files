@@ -164,3 +164,9 @@ z = (4.7-5) / (0.5/sqrt(9))
 z_0.025 = qnorm(p=0.025, 0, 1, lower.tail = FALSE)
 z_0.025
 qt(p=0.025, df=8, lower.tail = FALSE)
+
+# Example
+z_0.025 = qnorm(p=0.025, 0, 1, lower.tail = FALSE)
+177 - z_0.025 * (6/sqrt(9))
+177 + z_0.025 * (6/sqrt(9))
+(z_0.025 * 6 / 0.5)^2
