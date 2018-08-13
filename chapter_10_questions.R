@@ -116,3 +116,12 @@ F = 26.4 / 12.7
 qf(p=0.95, df1=9, df2=13, lower.tail = FALSE)
 qf(0.05, df1=9, df2=13, lower.tail = FALSE)
 2*pf(q=F, df1=9, df2=13, lower.tail = FALSE)
+
+# Example A
+p_hat = 202 / 1010
+qnorm(p=0.975, 0, 1)
+0.2 - (1.96 * sqrt(0.8*0.2/1010))
+(1.96/0.01)^2*0.5^2
+(1.96/0.01)^2*0.3*0.7
+(0.2-0.25) / sqrt(0.25*0.75/1010)
+qnorm(p=0.05, 0, 1)
