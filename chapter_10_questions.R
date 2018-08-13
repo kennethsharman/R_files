@@ -7,7 +7,6 @@
 z_0.05 = qnorm(p=0.95, 0, 1)
 z = (17-15) / (3/sqrt(36))
 z / z_0.05
-z
 
 # Example F
 z = (4.7-5) / (0.5/sqrt(9))
@@ -51,9 +50,7 @@ z_0.025 = qnorm(p=0.975, 0, 1)
 p_hat = 202/1010
 std_p = sqrt((p_hat*(1-p_hat)) / (1010))
 z = (p_hat - 0.25) / std_p
-z
 p_val = pnorm(q=z, 0, 1)
-p_val
 
 # Exercise 10.51
 (74-71) / sqrt((9^2+10^2) / 50)
@@ -88,7 +85,6 @@ t_0.025
 
 # Example D (b)
 sp = sqrt(((12.04^2*8)+(11.25^2*7))/15)
-sp
 t = (118-110) / (sp*sqrt((1/9)+(1/8)))
 t_0.01 = qt(p=1-0.01, 15)
 t_0.01
@@ -125,3 +121,46 @@ qnorm(p=0.975, 0, 1)
 (1.96/0.01)^2*0.3*0.7
 (0.2-0.25) / sqrt(0.25*0.75/1010)
 qnorm(p=0.05, 0, 1)
+
+# Example B
+z_0.01 = qnorm(p=0.01, 0, 1, lower.tail = FALSE)
+z_0.01
+(394.6-468.3) - z_0.01 * sqrt((84.7^2/64)+(38.2^2/36))
+(394.6-468.3) + z_0.01 * sqrt((84.7^2/64)+(38.2^2/36))
+(394.6-468.3) / sqrt((84.7^2/64)+(38.2^2/36))
+qnorm(p=0.99, 0, 1)
+
+# Example C
+t_0.025 = qt(p=0.025, df=8, lower.tail = FALSE)
+177 - t_0.025 * (6/sqrt(9))
+177 + t_0.025 * (6/sqrt(9))
+t_0.05 = qt(p=0.05, df=8, lower.tail = FALSE)
+177 - t_0.05 * (6/sqrt(9))
+177 + t_0.05 * (6/sqrt(9))
+
+# Example D
+t_0.01 = qt(p=0.01, df=9+8-2, lower.tail = FALSE)
+sp = sqrt((8*12.04^2 + 7*11.25^2) / (9+8-2))
+(118-110) - t_0.01 * sp * sqrt((1/9)+(1/8)) 
+(118-110) + t_0.01 * sp * sqrt((1/9)+(1/8))
+(118-110) / (sp * sqrt((1/9)+(1/8)))
+qt(p=0.01, df=15, lower.tail=FALSE)
+
+# Example E
+p1 = 503/2235
+q1 = 1 - p1
+p2 = 572/2065
+q2 = 1 - p2
+stderr = sqrt((p1*q1/2235) + (p2*q2/2065))
+z_0.05 = qnorm(p=0.05, 0, 1, lower.tail = FALSE)
+(p1-p2) - z_0.05 * stderr
+(p1-p2) + z_0.05 * stderr
+ppooled = (p1+p2) / 2.0
+(p1-p2) / sqrt(ppooled*(1-ppooled)*((1/2235)+(1/2065)))
+qnorm(p=0.05, 0, 1)
+
+# Example F
+z = (4.7-5) / (0.5/sqrt(9))
+z_0.025 = qnorm(p=0.025, 0, 1, lower.tail = FALSE)
+z_0.025
+qt(p=0.025, df=8, lower.tail = FALSE)
