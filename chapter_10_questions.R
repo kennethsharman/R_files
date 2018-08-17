@@ -206,3 +206,12 @@ qf(p=0.05, df1=9, df2=13, lower.tail = FALSE)
 2 * pf(q=2.07874, df1=9, df2=13, lower.tail = FALSE)
 qf(p=0.05, df1=9, df2=13)
 qf(p=0.05, df1=9, df2=13, lower.tail = FALSE)
+
+# Exercise 10.91
+qnorm(p=0.05, 0, 1, lower.tail = FALSE)
+7 + sqrt(5/20)*1.645
+pnorm(q=0.645, lower.tail = FALSE)
+
+# Exercise 10.93
+qnorm(p=0.025, lower.tail = FALSE)
+(2*1.96)^2 * 25 / (5-10)^2
