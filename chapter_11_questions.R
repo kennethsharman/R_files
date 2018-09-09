@@ -25,6 +25,5 @@ res
 
 plot(x,res)
 
-
 qchisq(p=0.05, df=2, lower.tail = FALSE)
 qchisq(p=0.05, df=2)
